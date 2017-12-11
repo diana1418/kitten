@@ -6,15 +6,29 @@
 }
 
 /*DESKTOP*/
-figure {
+body {
   background-image: url(../assets/images/sunny-day.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
 }
 
-.col-xs-6, .col-md-6, .col-sm-6 {
-  width: 
+figure {
+  width: 10%;
+}
+
+img {
+  width: 100%;
+  position: absolute;
+}
+
+.view-mobile {
+  display: block;
+}
+.view-table {
+  display: none;
+}
+.view-desktop {
+  display: none;
 }
 
 /*MEDIA QUERY*/
@@ -314,16 +328,37 @@ figure {
 /*CHANGES*/
 
   @media (min-width: 768px) {
-    figure {
+    body {
       background-image: url(../assets/images/night.jpg);
     }
+    
+    .view-mobile {
+      display: none;
+    }
+    .view-table {
+      display: block;
+    }
+.view-desktop {
+  display: none;
+}
 
-    col
   }
   
 
   @media (min-width: 992px){
-    figure {
+    body {
       background-image: url(../assets/images/dawn.png);
     }
+    
+    .view-mobile {
+      display: none;
+    }
+    .view-table {
+     display: none;
+    }
+    .view-desktop {
+      display: block;
+    }
+
   }
+
