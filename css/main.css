@@ -10,15 +10,19 @@ body {
   background-image: url(../assets/images/sunny-day.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-figure {
-  width: 10%;
+  width: 100%;
 }
 
 img {
   width: 100%;
   position: absolute;
+}
+
+.row {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 .view-mobile {
@@ -29,6 +33,11 @@ img {
 }
 .view-desktop {
   display: none;
+}
+
+[class*='col-'] {
+  float: left;
+  padding: 20px;
 }
 
 /*MEDIA QUERY*/
@@ -338,9 +347,9 @@ img {
     .view-table {
       display: block;
     }
-.view-desktop {
-  display: none;
-}
+    .view-desktop {
+      display: none;
+    }
 
   }
   
